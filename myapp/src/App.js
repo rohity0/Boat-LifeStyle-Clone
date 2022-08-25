@@ -1,14 +1,13 @@
-
 import './App.css';
-import { MenuDrop } from './Component/MenuDrop';
+import { Home } from './Component/Home';
 import { NavBar } from './Component/Navbar';
-import { ShopDrop } from './Component/ShopDrop';
+
 
 function App() {
   return (
     <div className="App">
      <NavBar />
-     
+     <Home />
    
     </div>
   );
