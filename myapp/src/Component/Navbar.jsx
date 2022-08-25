@@ -41,12 +41,14 @@ export function NavBar(){
             <Spacer />
               <UnorderedList mr="2rem"  alignItems={"center"} listStyleType={"none"}> 
                  <Grid templateColumns='repeat(4, 1fr)' gap={5}>
-                    <ListItem onMouseEnter={handleDrop} onMouseLeave={removeDrop}  p="1rem" _hover={{bg: "rgb(31, 28, 28)"}} cursor="pointer" >Shop <ChevronDownIcon />
+                    <ListItem onMouseEnter={handleDrop} onMouseLeave={removeDrop}  p="1rem" _hover={{bg: "rgb(31, 28, 28)"}} cursor="pointer" >
+                      Shop <ChevronDownIcon />
                         {show &&  <ShopDrop />}
                     </ListItem>
                     <ListItem p="1rem" _hover={{bg: "rgb(31, 28, 28)"}} cursor="pointer" >Daily Deals</ListItem>
                     <ListItem p="1rem" _hover={{bg: "rgb(31, 28, 28)"}} cursor="pointer" >Offer Zone</ListItem>
-                    <ListItem onMouseEnter={handleMenu} onMouseLeave={removeMenu} p="1rem" _hover={{bg: "rgb(31, 28, 28)"}} cursor="pointer">More <ChevronDownIcon /> 
+                    <ListItem onMouseEnter={handleMenu} onMouseLeave={removeMenu} p="1rem" _hover={{bg: "rgb(31, 28, 28)"}} cursor="pointer">
+                      More <ChevronDownIcon /> 
                      {menu && <MenuDrop />}
                     </ListItem> 
                     
@@ -54,7 +56,7 @@ export function NavBar(){
                </UnorderedList>
                
                 <Box >
-                     <Search2Icon  position={"absolute"} zIndex="5" color={"black"} top="60px" ml="3px" />
+                     <Search2Icon alignItems={"center"}  position={"absolute"} zIndex="5" color={"black"} top="60px" ml="3px" />
                     <Input w="250px" p="0px 25px" placeholder="  Search..." textColor={"black"}  borderRadius={"20px"} bg="white" 
                         />
                 </Box>

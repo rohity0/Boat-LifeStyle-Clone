@@ -6,13 +6,14 @@ export function ShopDrop(){
     return(
         <>
     <UnorderedList 
+         h="150px"
          borderBottomRadius={"1rem"}
           zIndex={"10"}
-          marginLeft= "-475px"
+        //   marginLeft= "-475px"
           left={"0"}
           border ="1px solid black"
           w="auto"
-          h={"100%"} m={"auto"} 
+          m={"auto"} 
           boxSize="border-box"
           position="absolute" 
           top="97px"
