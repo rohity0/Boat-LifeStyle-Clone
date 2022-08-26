@@ -46,8 +46,8 @@ export function Home(){
         <>
           <Box color="white" h={'auto'}  bg="#212529;">
 
-          <Box>
-            <Image src={data[count]} />
+          <Box >
+            <Image w="100%" src={data[count]} />
             </Box> 
           
               <Box>
@@ -133,7 +133,9 @@ export function Home(){
              
           </Box>
             
-            
+            <Box h="200px" bg="#212529">
+
+            </Box>
            
                 
            

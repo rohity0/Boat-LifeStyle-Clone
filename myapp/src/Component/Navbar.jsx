@@ -8,10 +8,12 @@ import { IoMdGift, IoMdCart } from "react-icons/io";
 import { useState } from "react";
 import { ShopDrop } from "./ShopDrop";
 import { MenuDrop } from "./MenuDrop";
+import { DrawerExample } from "./Cart";
 
 export function NavBar(){
   const[show, setShow] = useState(false)
   const [menu , setMenu] = useState(false)
+  const [cartShow , setCartShow] = useState(false)
   const handleDrop =()=>{
     setShow(!show)
   }
@@ -23,6 +25,11 @@ export function NavBar(){
   }
   const removeMenu = ()=>{
     setMenu(!menu)
+  }
+
+  const handleCart = ()=>{
+    setCartShow(!cartShow)
+    console.log(cartShow)
   }
   
     return(
@@ -68,8 +75,8 @@ export function NavBar(){
                     <IoMdGift fontSize={"1.5rem"} />
                  </Box>
                  <Box>
-                   <IoMdCart  />
-                  
+                   <IoMdCart onClick={handleCart} cursor={"pointer"}  />
+                     <DrawerExample show={cartShow} setCartShow={setCartShow} /> 
                  </Box>
                 </HStack>
 
