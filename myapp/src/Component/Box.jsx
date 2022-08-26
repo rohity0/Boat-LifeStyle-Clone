@@ -1,7 +1,7 @@
 import { Box, Button, Container, Flex, Image, Text } from "@chakra-ui/react";
 import { FaStar } from "react-icons/fa";
 export function BoxData({name, price, dec, strp, image, id , rating}){
-    console.log(image)
+   
     return(
         <>
            <Box borderRadius={"10px"} color={"black"} h="380px" bgColor="rgb(205, 205, 205);"  w={"250px"} p={"5px"} mb="100px"  >
@@ -21,7 +21,7 @@ export function BoxData({name, price, dec, strp, image, id , rating}){
                 <Text>{dec}</Text>
 
                 <Box mt={"5px"} textAlign={"center"}>
-                   <Button _hover={"none"}  p="0px 45px"  color={"white"} bg="red">ADD TO CART</Button>
+                   <Button onClick={""} _hover={"none"}  p="0px 45px"  color={"white"} bg="red">ADD TO CART</Button>
                  </Box>
               </Box>
            
