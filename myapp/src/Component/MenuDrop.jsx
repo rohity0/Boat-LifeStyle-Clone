@@ -1,5 +1,6 @@
 
 import { Flex, ListItem, UnorderedList } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 export function MenuDrop(){
 
     return(
@@ -16,7 +17,7 @@ export function MenuDrop(){
               borderBottomRadius={"1rem"}
               p="1rem"
                color={"white"} bg="black" width={"auto"} flexDirection={"column"}>
-                  <ListItem>Gifting</ListItem>
+                  <ListItem> <Link to="/gifting" >Gifting</Link> </ListItem>
                   <ListItem>Do What Floats Your boAt</ListItem>
                   <ListItem>Blogs</ListItem>
                   <ListItem>Meet the boAtheads</ListItem>

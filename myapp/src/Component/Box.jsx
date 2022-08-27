@@ -1,7 +1,23 @@
 import { Box, Button, Container, Flex, Image, Text } from "@chakra-ui/react";
+import { useContext } from "react";
 import { FaStar } from "react-icons/fa";
-export function BoxData({name, price, dec, strp, image, id , rating}){
-   
+import { AppContext } from './../Context/AppContext';
+import { useToast } from '@chakra-ui/react';
+
+export function BoxData({name, price, dec, strp, image, id , rating, item}){
+
+     const {handleCartData} = useContext(AppContext)
+     const toast = useToast();
+     const handle = ()=>{
+      toast({
+              title: 'Account created.',
+              description: "We've created your account for you.",
+              status: 'success',
+              duration: 1000,
+              isClosable: true,
+            })
+      }
+
     return(
         <>
            <Box borderRadius={"10px"} color={"black"} h="380px" bgColor="rgb(205, 205, 205);"  w={"250px"} p={"5px"} mb="100px"  >
@@ -21,7 +37,9 @@ export function BoxData({name, price, dec, strp, image, id , rating}){
                 <Text>{dec}</Text>
 
                 <Box mt={"5px"} textAlign={"center"}>
-                   <Button onClick={""} _hover={"none"}  p="0px 45px"  color={"white"} bg="red">ADD TO CART</Button>
+                   <Button onClick={()=>(
+                     handleCartData(item) , handle ) } _hover={"none"}  p="0px 45px"  color={"white"} bg="red">
+                     ADD TO CART</Button>
                  </Box>
               </Box>
            
