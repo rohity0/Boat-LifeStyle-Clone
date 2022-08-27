@@ -5,6 +5,7 @@ import { array1, bestSeller, dailyDeals, watches } from './data';
 import Slider from "react-slick";
 import { BoxData } from "./Box";
 
+
 export function Home(){
     const [count, setCount] = useState(0)
     const [over, setOver] = useState(true)
@@ -34,17 +35,17 @@ export function Home(){
 
     const settings = {
       infinite: true,
-      speed: 500,
+      speed: 200,
       slidesToShow: 4,
       slidesToScroll: 4,
-      
-      speed: 3000,
       autoplaySpeed: 2000,
     };
-
+ 
+   
+  
     return(
         <>
-          <Box color="white" h={'auto'}  bg="#212529;">
+          <Box color="white" h={'auto'}  bg="#212529">
 
           <Box >
             <Image w="100%" src={data[count]} />
@@ -64,6 +65,7 @@ export function Home(){
                              id= {item.id}
                              strp = {item.strprice}
                              dec = {item.dec}
+                             item={item}
                             />
                         
                       })}
@@ -91,6 +93,7 @@ export function Home(){
                              id= {item.id}
                              strp = {item.strprice}
                              dec = {item.dec}
+                             item={item}
                             />
                         
                       })}
@@ -118,6 +121,7 @@ export function Home(){
                              id= {item.id}
                              strp = {item.strprice}
                              dec = {item.dec}
+                             item={item}
                             />
                         
                       })}

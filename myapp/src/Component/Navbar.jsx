@@ -38,7 +38,7 @@ export function NavBar(){
                     Listen to the sound you deserve with Stone 135. Bag it at ₹799! 🤩
           </Box>
           {/* hhh */}
-         <Flex alignItems={"center"}   bg="Black" color={"white"}>
+         <Flex  alignItems={"center"}   bg="Black" color={"white"}>
              <Box>
                 <Link to="/" > 
                          <Image p="7px" ml={"20px"} w="9vw" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229" 
@@ -75,7 +75,7 @@ export function NavBar(){
                     <IoMdGift fontSize={"1.5rem"} />
                  </Box>
                  <Box>
-                   <IoMdCart onClick={handleCart} cursor={"pointer"}  />
+                 <IoMdCart onClick={handleCart} cursor={"pointer"}  />
                      <DrawerExample show={cartShow} setCartShow={setCartShow} /> 
                  </Box>
                 </HStack>

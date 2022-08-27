@@ -1,13 +1,16 @@
 import './App.css';
-import { Home } from './Component/Home';
+import { AllRoutes } from './Component/AllRoutes';
 import { NavBar } from './Component/Navbar';
 
 
 function App() {
+  
+
   return (
     <div className="App">
      <NavBar />
-     <Home />
+     <AllRoutes />
+    
    
     </div>
   );
