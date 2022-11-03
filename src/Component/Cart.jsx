@@ -108,7 +108,7 @@ export function DrawerExample({show, setCartShow, }) {
                 <Spacer />
                 <Text> Free</Text>
                </Flex>
-               <Flex fontWeight={"bold"} color="black" p="0 10px"> 
+               <Flex fontWeight={"bold"} color="white" p="0 10px"> 
                 <Text>Total</Text>
                 <Spacer />
                 <Text> RS. {total}</Text>

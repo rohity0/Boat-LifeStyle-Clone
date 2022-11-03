@@ -9,7 +9,7 @@ export function MenuDrop(){
              position="absolute"
              top={"98px"}
              ml="-25px"
-
+            zIndex={10}
           > 
               <Flex
               alignItems={"start"}
