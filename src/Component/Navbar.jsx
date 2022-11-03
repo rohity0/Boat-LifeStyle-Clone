@@ -50,7 +50,7 @@ export function NavBar(){
                  <Grid templateColumns='repeat(4, 1fr)' gap={5}>
                     <ListItem onMouseEnter={handleDrop} onMouseLeave={removeDrop}  p="1rem" _hover={{bg: "rgb(31, 28, 28)"}} cursor="pointer" >
                       Shop <ChevronDownIcon />
-                        {show &&  <ShopDrop />}
+                        {/* {show &&  <ShopDrop />} */}
                     </ListItem>
                     <ListItem p="1rem" _hover={{bg: "rgb(31, 28, 28)"}} cursor="pointer" >Daily Deals</ListItem>
                     <ListItem p="1rem" _hover={{bg: "rgb(31, 28, 28)"}} cursor="pointer" >Offer Zone</ListItem>
@@ -69,7 +69,7 @@ export function NavBar(){
                 </Box>
                 <HStack mr="1rem" fontSize={"1.5rem"} color="white" p="1rem" spacing='14px'>
                   <Box>
-                  < FaUser />
+                  <Link to="/login"> < FaUser /></Link>
                 </Box> 
                   <Box p="0px">
                     <IoMdGift fontSize={"1.5rem"} />

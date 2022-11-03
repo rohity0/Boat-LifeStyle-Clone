@@ -43,11 +43,11 @@ export const AppContextProvider = ({children})=>{
   
    const handleTotal = ()=>{
          return cartData.reduce ((acu,  c)=>{
-            return acu + c.price * c.quantity
+            return acu + (c.price * c.quantity)
          },0)
    }
  let total = handleTotal()
-
+console.log(total)
  
 
     return (

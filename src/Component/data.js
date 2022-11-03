@@ -283,7 +283,7 @@ export const array1 = [
   export let arr = [
     {
       image:
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_b2052cb3-100a-45d6-9170-1512deb9138d_400x.png?v=1631167046",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_blue_295a504a-2ae2-4719-9400-263f453efddd_400x.png?v=1635140773",
       pname: "boAt Airdopes 131 - Wireless Earbuds",
       price: "999",
       strprice: " 2,990",

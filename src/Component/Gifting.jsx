@@ -6,7 +6,7 @@ export function  Gifting (){
 
     return(
         <>
-        <Box mb="25px" bg="#212529" color={"white"}>
+        <Box mb="25px" h="auto" bg="#212529" color={"white"}>
           <Box p="25px 0px 25px 25px " fontWeight={"700"} fontSize="25px">
               <Text fontWeight={"700"} p="20px 25px" as="h1">Gifting..</Text>
           </Box>
@@ -30,11 +30,7 @@ export function  Gifting (){
              
             </Grid>
          </Box>
-         <Box  h="100px" bg="#212529">
-
-         </Box>
-          
-        </Box>
+       </Box>
        
         
         </>
