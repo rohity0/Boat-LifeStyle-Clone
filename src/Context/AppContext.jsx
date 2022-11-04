@@ -5,7 +5,14 @@ export const AppContext = createContext();
 export const AppContextProvider = ({children})=>{
    const  [cartData, setCartData] = useState([])
    
+   const [login, setLogin] = useState(false)
+
    const handleCartData = (data)=>{
+     if(!login){
+        alert("Kindly Login Before adding Item In Cart") 
+        return;
+     }
+
           setCartData([
             ...cartData,
             {
@@ -13,9 +20,8 @@ export const AppContextProvider = ({children})=>{
                 quantity: 1,
             }
           ])
-       
-        
-   }  
+         alert("Item added to Cart")
+        }  
 
 
    const handleDelete  = (id)=>{
@@ -51,6 +57,6 @@ console.log(total)
  
 
     return (
-        <AppContext.Provider value={{cartData, handleCartData, handleQunatity, handleDelete, total  }}> {children}</AppContext.Provider>
+        <AppContext.Provider value={{cartData, handleCartData, handleQunatity, handleDelete, total ,login, setLogin }}> {children}</AppContext.Provider>
     )
 }

@@ -9,8 +9,11 @@ import { useState } from "react";
 import { ShopDrop } from "./ShopDrop";
 import { MenuDrop } from "./MenuDrop";
 import { DrawerExample } from "./Cart";
+import { useContext } from "react";
+import { AppContext } from "../Context/AppContext";
 
 export function NavBar(){
+  const {login} =  useContext(AppContext)
   const[show, setShow] = useState(false)
   const [menu , setMenu] = useState(false)
   const [cartShow , setCartShow] = useState(false)
@@ -69,7 +72,7 @@ export function NavBar(){
                 </Box>
                 <HStack mr="1rem" fontSize={"1.5rem"} color="white" p="1rem" spacing='14px'>
                   <Box>
-                  <Link to="/login"> < FaUser /></Link>
+                  <Link to="/login"> < FaUser  style={{color: login? "red" : "white"}} /></Link>
                 </Box> 
                   <Box p="0px">
                     <IoMdGift fontSize={"1.5rem"} />
