@@ -6,6 +6,7 @@ import { NavBar } from "./Navbar";
 import { Footer } from "./Footer";
 import { SignUp } from "./SignUp";
 import { Login } from "./Login";
+import { Privateroute } from "./PrivateRoutes";
 
 export function AllRoutes (){
 
@@ -27,9 +28,11 @@ export function AllRoutes (){
                  } />
                  <Route path="/login" element={ 
                     <>
-                    <NavBar />
-                    <Login />
-                    <Footer />
+                   <Privateroute>
+                     <NavBar />
+                     <Login />
+                     <Footer />
+                   </Privateroute>
                     </>
                  } />
                  <Route path="/signup" element={ 
