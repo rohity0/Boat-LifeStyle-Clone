@@ -19,19 +19,7 @@ https://myapp-yadavry09-gmailcom.vercel.app/
 
 ## Screenshots
   * Landing page
-![App Screenshot](https://i.postimg.cc/9MJdVn5J/Screenshot-223.png)
+![App Screenshot](https://i.postimg.cc/WtLhTC4h/Screenshot-159.pngg)
 
 
-## Authors
-
-- [Manish Faujdar](https://github.com/moneyforey)
-- [Rohit Yadav](https://github.com/rohity0)
-- [Pravhat Ray](https://github.com/pravhatray)
-- [Lokesh Ahire](https://github.com/lokeshahire)
-
-
-
-## Feedback
-
-If you have any feedback, please reach out to us at moneyforey786@gmail.com
 
