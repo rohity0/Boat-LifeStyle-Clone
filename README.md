@@ -8,7 +8,7 @@ https://myapp-yadavry09-gmailcom.vercel.app/
 
  ## Preview
   * Landing page
- ## <a href="https://ibb.co/LkdQZcW"><img src="https://i.ibb.co/yfFhQZ1/Screenshot-159.png" alt="Screenshot-159" border="0" /></a>
+ ![App Screenshot](https://ibb.co/jvMkPGt)
  * Products
  ## <a href="https://ibb.co/Wtwm4yn"><img src="https://i.ibb.co/ZmPqp8d/Screenshot-160.png" alt="Screenshot-160" border="0" /></a>
  * Side Cart
