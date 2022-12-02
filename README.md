@@ -1,4 +1,5 @@
 # This project is the clone of Boat-lifeStyle
+<p> Boat is an e-commerce website where user's can purchase electronic devices like earphone, smart-watches etc !! </p> 
 
 ## Technology Used
  ReactJs,  HTML, CSS, JavaScript,  ChakaraUi 
