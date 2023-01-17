@@ -5,6 +5,9 @@ export const AppContext = createContext();
 export const AppContextProvider = ({children})=>{
    const  [cartData, setCartData] = useState([])
    
+   const Users = JSON.parse(localStorage.getItem("Users")) || [];
+
+
    const [login, setLogin] = useState(false)
 
    const handleCartData = (data)=>{
@@ -53,10 +56,10 @@ export const AppContextProvider = ({children})=>{
          },0)
    }
  let total = handleTotal()
-console.log(total)
+// console.log(total)
  
 
     return (
-        <AppContext.Provider value={{cartData, handleCartData, handleQunatity, handleDelete, total ,login, setLogin }}> {children}</AppContext.Provider>
+        <AppContext.Provider value={{cartData,setCartData, handleCartData, handleQunatity, handleDelete,Users, total ,login, setLogin }}> {children}</AppContext.Provider>
     )
 }
