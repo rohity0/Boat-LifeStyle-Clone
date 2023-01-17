@@ -17,13 +17,18 @@ import { FaTrashAlt } from "react-icons/fa";
 
 export function DrawerExample({show, setCartShow, }) {
  
-    const {total,cartData , handleDelete, handleQunatity} = useContext(AppContext)
-    console.log(cartData)
+    const {total,cartData , handleDelete, setCartData, handleQunatity} = useContext(AppContext)
+    // console.log(cartData)
   
   const handleClose = ()=>{
       setCartShow(!show)
   }
    
+  const handleShopping = ()=>{
+           alert("Thank for Shopping Your Item will delivered!!!");
+           setCartData([])
+  }
+
     return (
       <>
       <Drawer
@@ -115,9 +120,9 @@ export function DrawerExample({show, setCartShow, }) {
                </Flex>
                <Text mt="20px" mb="10px" fontWeight={"bold"} color="red" p="5px" textAlign={"center"}>Continue Shopping</Text>
                
-               <Button _hover={{bg: "rgb(199, 118, 118);"}} p="5px" w="100%" m="auto" display={"block"} bg="red" color="white"b="20px" >
+               <Button onClick={handleShopping}  _hover={{bg: "rgb(199, 118, 118);"}} p="5px" w="100%" m="auto" display={"block"} bg="red" color="white"b="20px" >
                 CASH ON DELIVERY/UPI</Button>
-               <Button border={"2px solid red"} _hover={{bg: "rgb(199, 118, 118);"}} w="100%" m="auto" mt="15px" bg="white" color="red" p="5px" >
+               <Button onClick={handleShopping}  border={"2px solid red"} _hover={{bg: "rgb(199, 118, 118);"}} w="100%" m="auto" mt="15px" bg="white" color="red" p="5px" >
                 PAY VIA CARD/OTHERS</Button>
               
                </Box>

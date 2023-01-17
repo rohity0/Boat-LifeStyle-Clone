@@ -2,7 +2,7 @@ import { Search2Icon, ChevronDownIcon } from "@chakra-ui/icons";
 import { Box, Flex ,Image, Spacer , Grid, HStack,  ListItem, UnorderedList, 
          Input
 } from "@chakra-ui/react";
-import { FaUser,  } from "react-icons/fa";
+import { FaLeaf, FaUser,  } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoMdGift, IoMdCart } from "react-icons/io";
 import { useState } from "react";
@@ -13,7 +13,7 @@ import { useContext } from "react";
 import { AppContext } from "../Context/AppContext";
 
 export function NavBar(){
-  const {login} =  useContext(AppContext)
+  const {login , setLogin} =  useContext(AppContext)
   const[show, setShow] = useState(false)
   const [menu , setMenu] = useState(false)
   const [cartShow , setCartShow] = useState(false)
@@ -35,6 +35,10 @@ export function NavBar(){
     console.log(cartShow)
   }
   
+  const handleLogout = ()=>{
+    setLogin(false)
+  }
+
     return(
         <>
           <Box color={"white"} bg="#ff0000" textAlign={"center"} p="7px 20px"   >
@@ -72,7 +76,7 @@ export function NavBar(){
                 </Box>
                 <HStack mr="1rem" fontSize={"1.5rem"} color="white" p="1rem" spacing='14px'>
                   <Box>
-                  <Link to="/login"> < FaUser  style={{color: login? "red" : "white"}} /></Link>
+                  <Link to={!login? "/login" : ""}> < FaUser  onClick={ login? handleLogout : "" }  style={{color: login? "red" : "white"}} /></Link>
                 </Box> 
                   <Box p="0px">
                     <IoMdGift fontSize={"1.5rem"} />

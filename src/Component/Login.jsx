@@ -6,8 +6,7 @@ import { AppContext } from "../Context/AppContext"
 
 
 export const Login  = ()=>{
-    
-  const  {login, setLogin}  = useContext(AppContext)
+  const  {Users ,login, setLogin}  = useContext(AppContext)
   const  navigate = useNavigate();
 
    const  [from, setFrom] = useState({
@@ -27,12 +26,32 @@ export const Login  = ()=>{
    
     
       const handleLogin = ()=>{
-        if(from.email ==="r@gmail.com" && from.password){
-             setLogin(true)
-             navigate("/")
-        }  else{
-          alert("Wrong Credential")
-        }
+             for(let k in from){
+              if(from[k]===""){
+                alert("Kindly Put  Valid Input in "+ k);
+                // setIsloading(false);
+                return
+              }
+             }
+          
+             for(let i =0; i<Users.length; i++){
+                   if(Users[i]["email"]=== from.email){
+                          if(Users[i]["password"]=== from.password){
+                            setLogin(true);
+                            navigate("/")
+
+                          }else{
+                            continue;
+                          }
+                   }
+
+
+             }
+
+
+       
+
+
 
    }
     
