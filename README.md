@@ -5,7 +5,7 @@
  ReactJs,  HTML, CSS, JavaScript,  ChakaraUi 
 
 ## Link
-https://myapp-yadavry09-gmailcom.vercel.app/
+https://myapp-drab-gamma.vercel.app/
 
  ## Preview
   * Landing page
